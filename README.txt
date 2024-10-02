@@ -1,0 +1,1 @@
+Integrantes do grupo: Guilherme Silva, Yara Rosa, Lucas Ferrari, Yasmin e Izabela Gomes.
