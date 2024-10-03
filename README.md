@@ -15,4 +15,6 @@ O objetivo do sistema é facilitar o dia - a - dia de uma clínica, na questão 
 | Izabela Gomes       |
 
 <h3>Criação de Login</h3>
-<p>Foi criado com as linguagens HTML, CSS. Para a conexão de dados da página, usamos SQL e php.</p>
+<p>Foi criado com as linguagens HTML, CSS. Para a conexão de dados da página, usamos MySQL para a criação do script e php.</p>
+
+ainda em processo...
