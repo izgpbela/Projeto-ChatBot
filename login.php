@@ -1,36 +1,26 @@
 <?php
-include 'db.php'; // Inclui o arquivo de conexão
+include 'db_connection.php'; // inclui o arquivo de conexão
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recebe os dados do formulário
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Prepara e executa a consulta SQL
-    $sql = "SELECT password FROM usuarios WHERE username = ?";
+    // Aqui você deve fazer a consulta ao banco de dados para verificar o login
+    $sql = "SELECT * FROM usuarios WHERE username = ? AND senha = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $username);
+    $stmt->bind_param("ss", $username, $password);
     $stmt->execute();
-    $stmt->store_result();
-    
-    // Verifica se o usuário existe
-    if ($stmt->num_rows > 0) {
-        $stmt->bind_result($hashed_password);
-        $stmt->fetch();
+    $result = $stmt->get_result();
 
-        // Verifica a senha
-        if (password_verify($password, $hashed_password)) {
-            echo "Login bem-sucedido!";
-            // Aqui você pode iniciar uma sessão ou redirecionar o usuário
-        } else {
-            echo "Senha incorreta!";
-        }
+    if ($result->num_rows > 0) {
+        // Login bem-sucedido
+        echo "Login bem-sucedido!";
     } else {
-        echo "Usuário não encontrado!";
+        // Login falhou
+        echo "Usuário ou senha incorretos.";
     }
 
     $stmt->close();
 }
-
 $conn->close();
 ?>

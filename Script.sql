@@ -1,12 +1,15 @@
-create database usuario_db;
+CREATE DATABASE usuario_db;
 
-use usuario_db;
+USE usuario_db;
 
-create table usuarios (
-    id_usuario int auto_increment not null,
-    email varchar(45) not null,
-    username varchar(45) unique not null,
-    password int not null,
-    primary key (id_usuario)
-)
-engine=innodb;
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
+
+
+
+select id, email, username, senha
+from usuarios;
