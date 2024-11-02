@@ -1,5 +1,5 @@
 <h2>Projeto de Chat Boot</h2>
-<p>A ideia é criar um software de marcação de consultas, onde localizamos qual é o paciente, em qual clínica vamos marcar,  e após marcar aparecer o dia e a hora que o paciente está marcado.
+<p>Criamos um chat bot de whatssAp para fazer marcação de consultas, atráves do banco de dados do login, para localizamos qual é o paciente, em qual clínica vamos marcar,  e após marcar aparecer o dia e a hora que o paciente está marcado.
 
  O sistema é dividido em duas partes.  Sendo, a primeira para um auxiliar ou ao próprio profissional da saúde, fazendo, assim, as marcações e a gestão das agendas. A segunda é o do profissional da saúde, onde ele pode fazer a evolução do prontuário do que foi realizado na consulta/exame.<br>
 
