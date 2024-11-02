@@ -26,4 +26,5 @@ Criar Conta:
 esqueci senha:
 ![image](https://github.com/user-attachments/assets/751b5d4b-a4a2-4cae-a8b3-2c5f5f4ddee9)
 
-ainda em processo...
+<h3>CHAT BOT</h3>
+- Criado Javascript e com a ligação com os banco de dados
