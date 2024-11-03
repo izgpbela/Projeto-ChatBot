@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logo e barra de navegação -->
+    <header>
+        <div class="logo">
+            <img src="HH.png" alt="Logo do Site de Agendamento">
+        </div>
+        <nav class="toolbar">
+            <ul>
+                <li><a href="#intro">Início</a></li>
+                <li><a href="#agendar">Agendar Consulta</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Indicador de Login -->
+<div class="login-status">
+    <p>Login criado!</p> <!-- Esta mensagem será exibida quando o login for criado -->
+</div>
+
+    <!-- Indicador de Login -->
+    <div class="login-status" id="login-status" style="display:none;">
+        <p>Login criado!</p>
+    </div>
+
+    <!-- Seção de Boas-vindas -->
+    <section class="welcome-message">
+        <h2>Bem-vindo!</h2>
+        <p>Estamos felizes em tê-lo conosco. Explore nossos serviços e agende sua consulta.</p>
+    </section>
+
+    <!-- Seção de Introdução -->
+    <main>
+        <section class="intro" id="intro">
+            <h1>Agendamento de Consultas</h1>
+            <p>Agende sua consulta de forma prática e rápida com os melhores profissionais.</p>
+            <a href="#" class="btn-agendar">Agendar Consulta</a>
+        </section>
+        
+
+        <!-- Seção Sobre Nós -->
+        <section class="about" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma dedicada a facilitar o agendamento de consultas médicas, com foco em eficiência e comodidade para os nossos pacientes.</p>
+            <div class="about-details">
+                <h3>Nossa Missão</h3>
+                <p>Oferecer um serviço de agendamento acessível e confiável, promovendo a saúde e o bem-estar de nossos usuários.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section class="services" id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Sistema de Marcação</li>
+                <li>Consultas de Agendamento Online</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="contact" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para dúvidas e suporte.</p>
+            <a href="contato@exemplo.com" class="btn-contato">Enviar Mensagem</a>
+        </section>
+    </main>
+    <footer style="text-align: center; font-size: 0.8em; padding: 10px 0;">
+        <p>&copy; 2024 Agendamento de Consultas. Todos os direitos reservados.</p>
+    </footer>
+    
+
+    <script>
+        // Adiciona comportamento de rolagem suave e destaque ao clicar
+        document.querySelectorAll('.toolbar ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove a classe "active" de todos os links
+                document.querySelectorAll('.toolbar ul li a').forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Adiciona a classe "active" ao link clicado
+                this.classList.add('active');
+
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                // Rola para a seção correspondente
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Destaca a seção ativa ao rolar a página
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('main section');
+            const scrollPos = window.scrollY + 200; // Offset para maior precisão
+
+            sections.forEach(section => {
+                if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                    // Remove a classe "active" de todos os links
+                    document.querySelectorAll('.toolbar ul li a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    // Adiciona a classe "active" ao link correspondente
+                    const activeLink = document.querySelector(`.toolbar ul li a[href="#${section.id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

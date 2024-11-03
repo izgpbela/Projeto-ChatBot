@@ -1,0 +1,226 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de Cores */
+:root {
+    --vermelho-primario: #d32f2f;
+    --vermelho-escuro: #b71c1c;
+    --branco: #ffffff;
+    --cinza-claro: #f5f5f5;
+    --cinza-escuro: #333333;
+    --cinza-mais-claro: #e0e0e0; /* Fundo mais claro */
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--cinza-escuro);
+    background-color: var(--cinza-mais-claro);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: var(--branco); /* Barra superior branca */
+    color: var(--cinza-escuro);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixa a barra no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+/* Logo */
+.logo img {
+    height: 100px; /* Aumentado para 100px */
+    width: auto;
+}
+
+/* Barra de navegação */
+.toolbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.toolbar ul li a {
+    color: var(--cinza-escuro);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+}
+
+.toolbar ul li a:hover {
+    background-color: var(--vermelho-primario);
+    color: var(--branco);
+    border-radius: 5px;
+}
+
+/* Indicador de Login */
+.login-status {
+    text-align: center;
+    background-color: var(--vermelho-primario);
+    color: var(--branco);
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 60px; /* Ajusta o espaço abaixo do cabeçalho fixo */
+}
+
+/* Seção de Boas-vindas */
+.welcome-message {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--branco);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto; /* Centraliza a seção */
+}
+
+.welcome-message h2 {
+    font-size: 28px;
+    color: var(--vermelho-primario);
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: var(--cinza-escuro);
+}
+
+/* Seção de Introdução */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--branco);
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto; /* Centraliza a seção */
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: var(--vermelho-primario);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--cinza-escuro);
+    margin-bottom: 30px;
+}
+
+/* Botão de Agendamento */
+.btn-agendar {
+    background-color: var(--vermelho-primario);
+    color: var(--branco);
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-agendar:hover {
+    background-color: var(--vermelho-escuro);
+}
+
+/* Seção Sobre Nós */
+.about, .services, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto; /* Centraliza a seção */
+    background-color: var(--branco);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about h2, .services h2, .contact h2 {
+    font-size: 28px;
+    color: var(--vermelho-primario);
+    margin-bottom: 15px;
+}
+
+/* Seção de Serviços */
+.services {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.services ul {
+    list-style-type: none;
+    color: var(--cinza-escuro);
+}
+
+.services ul li {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+/* Botão de Contato */
+.btn-contato {
+    background-color: var(--vermelho-primario);
+    color: var(--branco);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: var(--vermelho-escuro);
+}
+
+/* Estilo de Destaque */
+.active {
+    background-color: var(--vermelho-primario); /* Cor de fundo do item ativo */
+    color: var(--branco); /* Cor do texto do item ativo */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold; /* Torna o texto mais destacado */
+}
+
+/* Estilos da nova caixa na seção Sobre Nós */
+.about-details {
+    background-color: var(--cinza-claro);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-details h3 {
+    font-size: 24px;
+    color: var(--vermelho-primario);
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    font-size: 16px;
+    color: var(--cinza-escuro);
+}
+/* Indicador de Login */
+.login-status {
+    text-align: center;
+    background-color: var(--vermelho-primario); /* Cor de fundo do login */
+    color: var(--branco); /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    font-weight: bold; /* Destaque do texto */
+    margin-top: 60px; /* Espaço abaixo do cabeçalho fixo */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
