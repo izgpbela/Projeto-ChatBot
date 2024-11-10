@@ -58,8 +58,8 @@ echo "Connected successfully";
 CloseCon($conn);
 
 
-<h3>Criação de Login</h3>
-<p>Foi criado com as linguagens HTML, CSS. Para a conexão de dados da página, usamos MySQL para a criação do script e php.</p>
+## Imagens das Páginas
+Foi criado com as linguagens HTML, CSS. Para a conexão de dados da página, usamos MySQL para a criação do script e php.
 
 Faça Login:
 ![image](https://github.com/user-attachments/assets/a2950d73-6ea4-4627-a598-449b9943945e)
