@@ -58,10 +58,7 @@ echo "Connected successfully";
 CloseCon($conn);
 
 
-
-
-
-### Imagens das Páginas
+## Imagens da páginas
 Foi criado com as linguagens HTML, CSS. Para a conexão de dados da página, usamos MySQL para a criação do script e php.
 
 Faça Login:
