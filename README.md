@@ -51,18 +51,3 @@ echo "Connected successfully";
 CloseCon($conn);
 
 
-
-<h3>Criação de Login</h3>
-<p>Foi criado com as linguagens HTML, CSS. Para a conexão de dados da página, usamos MySQL para a criação do script e php.</p>
-
-Faça Login:
-![image](https://github.com/user-attachments/assets/a2950d73-6ea4-4627-a598-449b9943945e)
-
-Criar Conta:
-![image](https://github.com/user-attachments/assets/4fbc03d0-ebf9-45a9-9a69-bcd8d74d7576)
-
-esqueci senha:
-![image](https://github.com/user-attachments/assets/751b5d4b-a4a2-4cae-a8b3-2c5f5f4ddee9)
-
-<h3>CHAT BOT</h3>
-- Criado Javascript e com a ligação com os banco de dados
