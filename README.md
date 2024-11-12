@@ -48,7 +48,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
-CloseCon($conn);
+CloseCon($conn);´´´
 
 
 
