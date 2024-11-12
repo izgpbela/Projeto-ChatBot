@@ -19,23 +19,25 @@ O sistema é dividido em duas partes:
 ## Objetivo
 O objetivo do sistema é facilitar o dia-a-dia de uma clínica na questão de marcação/gestão de agendas e evolução de prontuário, sendo um sistema completo, evitando a dependência de outros aplicativos e sistemas, filas e desgastes desnecessários, tanto por parte do cliente quanto para o profissional da saúde em questão.
 
-Estrutura do Projeto
-dp_connection.php Esqueceu_senha.html forgot_password.php index.html Login.html login.php README.md register.php Script.sql style/ desktop.ini index.html style/ desktop.ini index.html style.css style.css
+## Estrutura do Projeto
 
-Principais Classes e Interfaces
-dp_connection.php: Conexão com o banco de dados.
-login.php: Lógica de autenticação de usuários.
-register.php: Registro de novos usuários.
-forgot_password.php: Recuperação de senha.
-Uso
-Para usar o projeto, siga as instruções abaixo:
+Projeto-ChatBot/ ├── controllers/ │ └── userController.js ├── models/ │ └── userModel.js ├── views/ │ ├── esqueceu_senha.html │ └── login.html ├── public/ │ ├── css/ │ │ └── styles.css │ ├── js/ │ │ └── scripts.js ├── routes/ │ └── userRoutes.js ├── README.md └── app.js
 
-Clone o repositório para o seu ambiente local.
-Configure o banco de dados utilizando o script Script.sql.
-Configure a conexão com o banco de dados no arquivo dp_connection.php.
-Abra o arquivo index.html no seu navegador para acessar a interface principal.
-Utilize as páginas de login (Login.html) e registro (register.php) para gerenciar usuários.
-Exemplo de Código
+
+### Principais Classes e Interfaces
+- **dp_connection.php**: Conexão com o banco de dados.
+- **login.php**: Lógica de autenticação de usuários.
+
+## Configuração do Projeto
+
+1. Configure o banco de dados utilizando o script `Script.sql`.
+2. Configure a conexão com o banco de dados no arquivo `dp_connection.php`.
+3. Abra o arquivo `index.html` no seu navegador para acessar a interface principal.
+4. Utilize as páginas de login (`Login.html`) e registro (`register.php`) para gerenciar usuários.
+
+### Exemplo de Código
+
+```php
 // Exemplo de conexão com o banco de dados
 include 'dp_connection.php';
 
@@ -47,6 +49,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 CloseCon($conn);
+
 
 
 <h3>Criação de Login</h3>
