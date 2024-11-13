@@ -32,6 +32,8 @@ O objetivo do sistema é facilitar o dia-a-dia de uma clínica na questão de ma
 4. Utilize as páginas de login (`Login.html`) e registro (`register.php`) para gerenciar usuários.
 
 ### Exemplo de Código
+
+```php
 // Exemplo de conexão com o banco de dados
 include 'dp_connection.php';
 
@@ -43,7 +45,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 CloseCon($conn);
-
+```
 
 # Chat
 
