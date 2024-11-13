@@ -10,14 +10,10 @@
 | Izabela Gomes     |
 
 ## Descrição
-Criamos um chat bot de WhatsApp para fazer marcação de consultas, através do banco de dados do login, para localizar qual é o paciente, em qual clínica vamos marcar, e após marcar aparecer o dia e a hora que o paciente está marcado.
-
-O sistema é dividido em duas partes:
-1. **Auxiliar ou Profissional da Saúde**: Responsável pelas marcações e gestão das agendas.
-2. **Profissional da Saúde**: Pode fazer a evolução do prontuário do que foi realizado na consulta/exame.
+Criamos um chat bot de WhatsApp para fazer marcação de consultas, através do banco de dados do login, para localizar qual é o paciente, com qual profissional poderar marcar, e após, vai aparecer o dia e a hora que o paciente está marcado.
 
 ## Objetivo
-O objetivo do sistema é facilitar o dia-a-dia de uma clínica na questão de marcação/gestão de agendas e evolução de prontuário, sendo um sistema completo, evitando a dependência de outros aplicativos e sistemas, filas e desgastes desnecessários, tanto por parte do cliente quanto para o profissional da saúde em questão.
+O objetivo do sistema é facilitar o dia-a-dia de uma clínica na questão de marcação/gestão de agendas de consultas, sendo um sistema completo, evitando a dependência de outros aplicativos e sistemas, desgastes desnecessários, tanto por parte do cliente quanto para o profissional da saúde em questão.
 
 
 ### Principais Classes e Interfaces
