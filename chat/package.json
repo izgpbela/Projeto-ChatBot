@@ -1,0 +1,16 @@
+{
+  "name": "wwebjs-bot",
+  "version": "1.0.0",
+  "description": "This is a simple example",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.11.3",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}
